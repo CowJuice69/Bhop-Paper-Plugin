@@ -1,3 +1,8 @@
+![Downloads](https://img.shields.io/github/downloads/CowJuice69/Bhop-Paper-Plugin/total?label=downloads)
+![Stars](https://img.shields.io/github/stars/CowJuice69/Bhop-Paper-Plugin?label=stars)
+![Issues](https://img.shields.io/github/issues/CowJuice69/Bhop-Paper-Plugin?label=issues)
+![License](https://img.shields.io/github/license/CowJuice69/Bhop-Paper-Plugin?label=license)
+
 # BhopPlugin
 
 A lightweight bunny hop plugin for Paper servers that preserves and amplifies player momentum across jumps.
