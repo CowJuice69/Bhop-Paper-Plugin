@@ -60,7 +60,8 @@ public final class BhopPlugin extends JavaPlugin implements Listener {
 
         groundTime.remove(id);
 
-        getServer().getScheduler().runTaskLater(this, () -> {
+        // Folia: 使用 EntityScheduler，任务跟随玩家跨区域迁移
+        player.getScheduler().runDelayed(this, task -> {
             Vector current = player.getVelocity();
             double horizSpeed = Math.sqrt(current.getX() * current.getX() + current.getZ() * current.getZ());
 
@@ -76,7 +77,7 @@ public final class BhopPlugin extends JavaPlugin implements Listener {
                         current.getZ() * scale
                 ));
             }
-        }, 1L);
+        }, null, 1L); // retiredCallback = null, delay = 1 tick
     }
 
     @EventHandler
